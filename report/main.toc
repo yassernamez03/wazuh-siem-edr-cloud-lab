@@ -1,93 +1,100 @@
 \babel@toc {french}{}\relax 
-\contentsline {section}{\numberline {1}Architecture VPC + Security Groups + EC2 Instances}{4}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Overview}{4}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}AWS VPC Configuration}{4}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}EC2 Instances}{5}{subsection.1.3}%
-\contentsline {subsubsection}{\numberline {1.3.1}Wazuh Server Instance}{6}{subsubsection.1.3.1}%
-\contentsline {subsubsection}{\numberline {1.3.2}Linux Client Instance}{6}{subsubsection.1.3.2}%
-\contentsline {subsubsection}{\numberline {1.3.3}Windows Client Instance}{7}{subsubsection.1.3.3}%
-\contentsline {subsection}{\numberline {1.4}Security Groups Configuration}{7}{subsection.1.4}%
-\contentsline {subsubsection}{\numberline {1.4.1}Wazuh Server Security Group}{7}{subsubsection.1.4.1}%
-\contentsline {subsubsection}{\numberline {1.4.2}Wazuh Clients Security Group}{8}{subsubsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.5}Network Architecture Diagram}{8}{subsection.1.5}%
-\contentsline {subsection}{\numberline {1.6}Connectivity Testing}{9}{subsection.1.6}%
-\contentsline {subsubsection}{\numberline {1.6.1}SSH to Wazuh Server}{9}{subsubsection.1.6.1}%
-\contentsline {subsubsection}{\numberline {1.6.2}SSH to Linux Client}{9}{subsubsection.1.6.2}%
-\contentsline {subsubsection}{\numberline {1.6.3}RDP to Windows Client}{10}{subsubsection.1.6.3}%
-\contentsline {subsection}{\numberline {1.7}Infrastructure Summary}{10}{subsection.1.7}%
-\contentsline {section}{\numberline {2}Wazuh Server Setup and Dashboard}{11}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Wazuh Services Status}{11}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Wazuh Dashboard Access}{12}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Agent Enrollment and Status}{13}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}Linux Agent Connection}{13}{subsubsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}Windows Agent Connection}{14}{subsubsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.4}Active Agents Overview}{15}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Security Events - Linux Client}{17}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Alert 1: SSH Brute Force Attack}{17}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}Attack Simulation}{17}{subsubsection.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.1.2}Wazuh Detection}{18}{subsubsection.3.1.2}%
-\contentsline {subsubsection}{\numberline {3.1.3}Event Details}{18}{subsubsection.3.1.3}%
-\contentsline {subsubsection}{\numberline {3.1.4}Security Implication}{18}{subsubsection.3.1.4}%
-\contentsline {subsection}{\numberline {3.2}Alert 2: Privilege Escalation (Sudo)}{19}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Wazuh Detection}{19}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Event Details}{20}{subsubsection.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.2.3}Security Implication}{20}{subsubsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.3}Alert 3: File Integrity Monitoring (FIM)}{20}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Event Details}{21}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Security Implication}{21}{subsubsection.3.3.2}%
-\contentsline {section}{\numberline {4}Security Events - Windows Client}{22}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Alert 1: Failed Logon Attempts}{22}{subsection.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.1}Wazuh Detection}{22}{subsubsection.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.1.2}Event Details}{23}{subsubsection.4.1.2}%
-\contentsline {subsubsection}{\numberline {4.1.3}Security Implication}{23}{subsubsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.2}Alert 2: User Account Creation and Group Modification (IAM)}{23}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Wazuh Detection}{24}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Event Details - User Creation (4720)}{24}{subsubsection.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.3}Event Details - Group Modification (4732)}{24}{subsubsection.4.2.3}%
-\contentsline {subsubsection}{\numberline {4.2.4}Security Implication}{25}{subsubsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.3}Alert 3: Sysmon Process Creation (EDR)}{25}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Sysmon Events in Wazuh}{25}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Event Details}{26}{subsubsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.3}EDR Value}{26}{subsubsection.4.3.3}%
-\contentsline {section}{\numberline {5}SIEM vs EDR - Comparative Analysis}{27}{section.5}%
-\contentsline {subsection}{\numberline {5.1}SIEM (Security Information and Event Management)}{27}{subsection.5.1}%
-\contentsline {subsubsection}{\numberline {5.1.1}Key Capabilities Demonstrated in Lab}{27}{subsubsection.5.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.2}Lab Use Cases}{27}{subsubsection.5.1.2}%
-\contentsline {subsubsection}{\numberline {5.1.3}Strengths \& Limitations}{27}{subsubsection.5.1.3}%
-\contentsline {subsection}{\numberline {5.2}EDR (Endpoint Detection and Response)}{27}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}Key Capabilities Demonstrated in Lab}{28}{subsubsection.5.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.2}Lab Use Cases}{28}{subsubsection.5.2.2}%
-\contentsline {subsubsection}{\numberline {5.2.3}Strengths \& Limitations}{28}{subsubsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.3}Wazuh: Unified SIEM + EDR Platform}{28}{subsection.5.3}%
-\contentsline {subsubsection}{\numberline {5.3.1}Demonstrated Integration Benefits}{29}{subsubsection.5.3.1}%
-\contentsline {section}{\numberline {6}Identity and Access Management (IAM) \& Privileged Access Management (PAM)}{30}{section.6}%
-\contentsline {subsection}{\numberline {6.1}IAM Concepts Demonstrated}{30}{subsection.6.1}%
-\contentsline {subsubsection}{\numberline {6.1.1}Authentication Monitoring}{30}{subsubsection.6.1.1}%
-\contentsline {subsubsection}{\numberline {6.1.2}Account Lifecycle Management}{30}{subsubsection.6.1.2}%
-\contentsline {subsubsection}{\numberline {6.1.3}Authorization \& Privilege Changes}{30}{subsubsection.6.1.3}%
-\contentsline {subsubsection}{\numberline {6.1.4}Identity-Based Threat Detection}{30}{subsubsection.6.1.4}%
-\contentsline {subsection}{\numberline {6.2}PAM (Privileged Access Management) Relevance}{30}{subsection.6.2}%
-\contentsline {subsubsection}{\numberline {6.2.1}Privileged Activity Monitoring}{30}{subsubsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}Compliance Support}{30}{subsubsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.3}Lab Demonstration Summary}{31}{subsection.6.3}%
-\contentsline {section}{\numberline {7}Threat Hunting - Sample Queries \& Analysis}{32}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Query 1: Failed Authentication Analysis}{32}{subsection.7.1}%
-\contentsline {subsubsection}{\numberline {7.1.1}Wazuh Query}{32}{subsubsection.7.1.1}%
-\contentsline {subsubsection}{\numberline {7.1.2}Analysis Approach}{32}{subsubsection.7.1.2}%
-\contentsline {subsubsection}{\numberline {7.1.3}Detection Indicators}{32}{subsubsection.7.1.3}%
-\contentsline {subsubsection}{\numberline {7.1.4}Response Actions}{32}{subsubsection.7.1.4}%
-\contentsline {subsection}{\numberline {7.2}Query 2: Privileged Account Activity}{32}{subsection.7.2}%
-\contentsline {subsubsection}{\numberline {7.2.1}Wazuh Query}{32}{subsubsection.7.2.1}%
-\contentsline {subsubsection}{\numberline {7.2.2}Analysis Approach}{33}{subsubsection.7.2.2}%
-\contentsline {subsubsection}{\numberline {7.2.3}Detection Indicators}{33}{subsubsection.7.2.3}%
-\contentsline {subsubsection}{\numberline {7.2.4}Response Actions}{33}{subsubsection.7.2.4}%
-\contentsline {subsection}{\numberline {7.3}Query 3: Process Anomaly Detection (EDR)}{33}{subsection.7.3}%
-\contentsline {subsubsection}{\numberline {7.3.1}Wazuh Query}{33}{subsubsection.7.3.1}%
-\contentsline {subsubsection}{\numberline {7.3.2}Analysis Approach}{33}{subsubsection.7.3.2}%
-\contentsline {subsubsection}{\numberline {7.3.3}Detection Indicators}{34}{subsubsection.7.3.3}%
-\contentsline {subsubsection}{\numberline {7.3.4}Response Actions}{34}{subsubsection.7.3.4}%
-\contentsline {subsection}{\numberline {7.4}Threat Hunting Best Practices}{34}{subsection.7.4}%
-\contentsline {section}{\numberline {8}Conclusion}{35}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Technical Achievements}{35}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Security Concepts Validated}{35}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Operational Value}{35}{subsection.8.3}%
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Project Context}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Lab Objectives}{4}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Technologies Used}{4}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Lab Scope}{4}{subsection.1.4}%
+\contentsline {section}{\numberline {2}Architecture VPC + Security Groups + EC2 Instances}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Overview}{6}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}AWS VPC Configuration}{6}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}EC2 Instances}{7}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Wazuh Server Instance}{8}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Linux Client Instance}{8}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Windows Client Instance}{9}{subsubsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.4}Security Groups Configuration}{9}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Wazuh Server Security Group}{9}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Wazuh Clients Security Group}{10}{subsubsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.5}Network Architecture Diagram}{10}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Connectivity Testing}{11}{subsection.2.6}%
+\contentsline {subsubsection}{\numberline {2.6.1}SSH to Wazuh Server}{11}{subsubsection.2.6.1}%
+\contentsline {subsubsection}{\numberline {2.6.2}SSH to Linux Client}{11}{subsubsection.2.6.2}%
+\contentsline {subsubsection}{\numberline {2.6.3}RDP to Windows Client}{12}{subsubsection.2.6.3}%
+\contentsline {subsection}{\numberline {2.7}Infrastructure Summary}{12}{subsection.2.7}%
+\contentsline {section}{\numberline {3}Wazuh Server Setup and Dashboard}{13}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Wazuh Services Status}{13}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Wazuh Dashboard Access}{14}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Agent Enrollment and Status}{15}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Linux Agent Connection}{15}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Windows Agent Connection}{16}{subsubsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.4}Active Agents Overview}{17}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Security Events - Linux Client}{19}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Alert 1: SSH Brute Force Attack}{19}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Attack Simulation}{19}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Wazuh Detection}{20}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}Event Details}{20}{subsubsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.4}Security Implication}{20}{subsubsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.2}Alert 2: Privilege Escalation (Sudo)}{21}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Wazuh Detection}{21}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Event Details}{22}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}Security Implication}{22}{subsubsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.3}Alert 3: File Integrity Monitoring (FIM)}{22}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Event Details}{23}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Security Implication}{23}{subsubsection.4.3.2}%
+\contentsline {section}{\numberline {5}Security Events - Windows Client}{24}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Alert 1: Failed Logon Attempts}{24}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Wazuh Detection}{24}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Event Details}{25}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.3}Security Implication}{25}{subsubsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.2}Alert 2: User Account Creation and Group Modification (IAM)}{25}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Wazuh Detection}{26}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Event Details - User Creation (4720)}{26}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.3}Event Details - Group Modification (4732)}{26}{subsubsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.4}Security Implication}{27}{subsubsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.3}Alert 3: Sysmon Process Creation (EDR)}{27}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Sysmon Events in Wazuh}{27}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.2}Event Details}{28}{subsubsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3}EDR Value}{28}{subsubsection.5.3.3}%
+\contentsline {section}{\numberline {6}SIEM vs EDR - Comparative Analysis}{29}{section.6}%
+\contentsline {subsection}{\numberline {6.1}SIEM (Security Information and Event Management)}{29}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Key Capabilities Demonstrated in Lab}{29}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Lab Use Cases}{29}{subsubsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.3}Strengths \& Limitations}{29}{subsubsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.2}EDR (Endpoint Detection and Response)}{29}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Key Capabilities Demonstrated in Lab}{30}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Lab Use Cases}{30}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.3}Strengths \& Limitations}{30}{subsubsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.3}Wazuh: Unified SIEM + EDR Platform}{30}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}Demonstrated Integration Benefits}{31}{subsubsection.6.3.1}%
+\contentsline {section}{\numberline {7}Identity and Access Management (IAM) \& Privileged Access Management (PAM)}{32}{section.7}%
+\contentsline {subsection}{\numberline {7.1}IAM Concepts Demonstrated}{32}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Authentication Monitoring}{32}{subsubsection.7.1.1}%
+\contentsline {subsubsection}{\numberline {7.1.2}Account Lifecycle Management}{32}{subsubsection.7.1.2}%
+\contentsline {subsubsection}{\numberline {7.1.3}Authorization \& Privilege Changes}{32}{subsubsection.7.1.3}%
+\contentsline {subsubsection}{\numberline {7.1.4}Identity-Based Threat Detection}{32}{subsubsection.7.1.4}%
+\contentsline {subsection}{\numberline {7.2}PAM (Privileged Access Management) Relevance}{32}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}Privileged Activity Monitoring}{32}{subsubsection.7.2.1}%
+\contentsline {subsubsection}{\numberline {7.2.2}Compliance Support}{32}{subsubsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.3}Lab Demonstration Summary}{33}{subsection.7.3}%
+\contentsline {section}{\numberline {8}Threat Hunting - Sample Queries \& Analysis}{34}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Query 1: Failed Authentication Analysis}{34}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {8.1.1}Wazuh Query}{34}{subsubsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {8.1.2}Analysis Approach}{34}{subsubsection.8.1.2}%
+\contentsline {subsubsection}{\numberline {8.1.3}Detection Indicators}{34}{subsubsection.8.1.3}%
+\contentsline {subsubsection}{\numberline {8.1.4}Response Actions}{34}{subsubsection.8.1.4}%
+\contentsline {subsection}{\numberline {8.2}Query 2: Privileged Account Activity}{34}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8.2.1}Wazuh Query}{34}{subsubsection.8.2.1}%
+\contentsline {subsubsection}{\numberline {8.2.2}Analysis Approach}{35}{subsubsection.8.2.2}%
+\contentsline {subsubsection}{\numberline {8.2.3}Detection Indicators}{35}{subsubsection.8.2.3}%
+\contentsline {subsubsection}{\numberline {8.2.4}Response Actions}{35}{subsubsection.8.2.4}%
+\contentsline {subsection}{\numberline {8.3}Query 3: Process Anomaly Detection (EDR)}{35}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8.3.1}Wazuh Query}{35}{subsubsection.8.3.1}%
+\contentsline {subsubsection}{\numberline {8.3.2}Analysis Approach}{35}{subsubsection.8.3.2}%
+\contentsline {subsubsection}{\numberline {8.3.3}Detection Indicators}{36}{subsubsection.8.3.3}%
+\contentsline {subsubsection}{\numberline {8.3.4}Response Actions}{36}{subsubsection.8.3.4}%
+\contentsline {subsection}{\numberline {8.4}Threat Hunting Best Practices}{36}{subsection.8.4}%
+\contentsline {section}{\numberline {9}Conclusion}{37}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Skills Acquired Summary}{37}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Importance of SIEM/EDR in a Modern SOC}{37}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Future Improvements}{37}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Acknowledgments}{38}{subsection.9.4}%
+\contentsline {section}{\numberline {10}References}{39}{section.10}%

@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1767899472.98049 "c:/Users/Alienware/Documents/CCN2/S3/Cloud Computing/Cloud-SIEM-EDR-Wazuh/report/main.tex" "main.pdf" "main" 1767899482.33365 0
+["pdflatex"] 1767900409.73171 "c:/Users/Alienware/Documents/CCN2/S3/Cloud Computing/Cloud-SIEM-EDR-Wazuh/report/main.tex" "main.pdf" "main" 1767900419.41271 0
   "../screenshots/AGENT ACTIVE 1.png" 1767874280 145382 fca08c96b9c50e1052db3ebe2de61e5d ""
   "../screenshots/AGENT ACTIVE 2.png" 1767876145 232116 ba01b49681c0df52e3bbdd311e6e86fa ""
   "../screenshots/Agent is Running linux.png" 1767874028 179066 f159e8dd7a7ffacad415ca70e7d7f399 ""
@@ -44,6 +44,7 @@
   "C:/Users/Alienware/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1200.pk" 1762947790 28440 20cc519a784a4c2fad34efd1b3ed8485 ""
   "C:/Users/Alienware/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1440.pk" 1764515065 34320 07c994242457c247f0e0cff3ede99c93 ""
   "C:/Users/Alienware/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1095.pk" 1764681021 21972 25ff34609e8fa9272e51fea3f756f6e6 ""
+  "C:/Users/Alienware/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1200.pk" 1764522442 24152 6a485e79192d6303274e7ef79b836592 ""
   "C:/Users/Alienware/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1762431679 24226934 3651083049a352da2032fe9a7afd2e9f ""
   "C:/Users/Alienware/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/symbol/psyr.tfm" 1136772254 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "C:/Users/Alienware/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136772254 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
@@ -261,13 +262,13 @@
   "C:/Users/Alienware/AppData/Local/Programs/MiKTeX/tex/latex/wallpaper/wallpaper.sty" 1145608440 6919 f87ec89c767393dfb3b9adfd163539b0 ""
   "C:/Users/Alienware/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/Alienware/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "c:/Users/Alienware/Documents/CCN2/S3/Cloud Computing/Cloud-SIEM-EDR-Wazuh/report/main.tex" 1767899472 39834 d8ab5d2e29ef123ca6056830a253c103 ""
+  "c:/Users/Alienware/Documents/CCN2/S3/Cloud Computing/Cloud-SIEM-EDR-Wazuh/report/main.tex" 1767900400 45865 57fd8ee59800ed443bc63e799fffeecf ""
   "logos/background.png" 1766013994 17575 800280ade95ccc16ad0c9a9b4eee0014 ""
   "logos/enset.png" 1764511196 31823 f933424c8b1ce59240773216c5e1c461 ""
-  "main.aux" 1767899481 23580 be631e42e1016b2fc25a15056bb0d4bd "pdflatex"
-  "main.out" 1767899481 18027 eca01570bc29534a0d276ed91a844b69 "pdflatex"
-  "main.tex" 1767899472 39834 d8ab5d2e29ef123ca6056830a253c103 ""
-  "main.toc" 1767899481 8946 8ec23e0feaca719c4a5661d6768bc227 "pdflatex"
+  "main.aux" 1767900418 24714 947a66123bd9f5e8b90ab0329ee04c59 "pdflatex"
+  "main.out" 1767900419 18963 1d9f224ddaf2f1602a4b536dc5b89a6e "pdflatex"
+  "main.tex" 1767900400 45865 57fd8ee59800ed443bc63e799fffeecf ""
+  "main.toc" 1767900419 9503 d9af4058fc5c7e681d4dc6d7ca989fd6 "pdflatex"
   "rapportENSET.cls" 1766239930 3313 d741862da19f6d5d8f64abfb6a86f11f ""
   (generated)
   "main.aux"

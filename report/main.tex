@@ -100,6 +100,78 @@
 %------------ Corps du rapport ----------------
 
 % ============================================================
+% INTRODUCTION
+% ============================================================
+
+\section{Introduction}
+
+\subsection{Project Context}
+
+In a context where cyber threats are becoming increasingly sophisticated, establishing a surveillance and security incident detection infrastructure has become essential for any organization. This project is part of the \textbf{Cloud Computing} module and aims to demonstrate the implementation of a SIEM (Security Information and Event Management) and EDR (Endpoint Detection and Response) solution in a cloud environment.
+
+The \textbf{Wazuh} platform, a recognized open-source solution in the cybersecurity field, was chosen for its versatility, scalability, and ability to unify SIEM and EDR functionalities within a single platform.
+
+\subsection{Lab Objectives}
+
+This practical lab aims to:
+
+\begin{enumerate}
+    \item \textbf{Design and deploy} a secure cloud architecture on AWS with network segmentation
+    \item \textbf{Install and configure} a Wazuh Manager server for centralized log collection
+    \item \textbf{Deploy agents} on Linux (Ubuntu) and Windows Server systems
+    \item \textbf{Generate and analyze} real-time security alerts
+    \item \textbf{Understand the differences} between SIEM and EDR approaches
+    \item \textbf{Apply proactive} Threat Hunting techniques
+    \item \textbf{Master IAM/PAM concepts} in an operational security context
+\end{enumerate}
+
+\subsection{Technologies Used}
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|l|l|X|}
+\hline
+\textbf{Category} & \textbf{Technology} & \textbf{Role} \\
+\hline
+\multirow{3}{*}{Cloud} & AWS EC2 & Virtual machine hosting \\
+& AWS VPC & Network isolation and segmentation \\
+& Security Groups & Network access control (firewall) \\
+\hline
+\multirow{3}{*}{SIEM/EDR} & Wazuh Manager & Central collection and analysis server \\
+& Wazuh Dashboard & Visualization and reporting interface \\
+& Wazuh Agents & Event collection on endpoints \\
+\hline
+\multirow{2}{*}{Endpoints} & Ubuntu 22.04 LTS & Linux client for monitoring \\
+& Windows Server 2022 & Windows client with Sysmon \\
+\hline
+Monitoring & Sysmon & Advanced Windows process telemetry \\
+\hline
+\end{tabularx}
+\caption{Lab Technology Stack}
+\end{table}
+
+\subsection{Lab Scope}
+
+This laboratory covers the following aspects:
+
+\begin{itemize}
+    \item \textbf{Infrastructure:} Deployment of an AWS VPC with public subnets, EC2 instances, and security groups
+    \item \textbf{Log Collection:} Configuration of Wazuh agents for system event forwarding
+    \item \textbf{Attack Detection:} Simulation and analysis of SSH brute force attacks, privilege escalation
+    \item \textbf{Windows Monitoring:} Sysmon integration for in-depth process visibility
+    \item \textbf{Threat Hunting:} Creation of proactive threat search queries
+\end{itemize}
+
+\begin{infobox}[Source Code]
+The source code and complete documentation for this project are available on GitHub:
+
+\centering
+\textbf{\large \href{https://github.com/yassernamez03/wazuh-siem-edr-cloud-lab}{\textcolor{wazuhblue}{https://github.com/yassernamez03/wazuh-siem-edr-cloud-lab}}}
+\end{infobox}
+
+\newpage
+
+% ============================================================
 % SECTION 1: ARCHITECTURE
 % ============================================================
 
@@ -1166,45 +1238,107 @@ Continuous Improvement & Refine queries based on findings and new threats \\
 
 \section{Conclusion}
 
-This lab successfully demonstrated the implementation of a cloud-based Wazuh SIEM/EDR platform on AWS infrastructure. Key accomplishments include:
+\subsection{Skills Acquired Summary}
 
-\subsection{Technical Achievements}
+This practical laboratory enabled the acquisition and validation of essential skills in operational cybersecurity:
 
 \begin{itemize}
-    \item Deployed a complete monitoring infrastructure with proper network segmentation
-    \item Successfully enrolled and monitored both Linux and Windows agents
-    \item Captured and analyzed real security events including:
-    \begin{itemize}
-        \item SSH brute force attacks
-        \item Privilege escalation activities
-        \item File integrity changes
-        \item Windows authentication events
-        \item Process-level EDR telemetry via Sysmon
-    \end{itemize}
+    \item \textbf{Secure Cloud Architecture:} Design and deployment of AWS infrastructure with VPC, subnets, and security groups following the principle of least privilege
+    \item \textbf{SIEM Administration:} Installation, configuration, and management of a Wazuh Manager server with its dashboard
+    \item \textbf{Agent Deployment:} Enrollment and configuration of monitoring agents on heterogeneous systems (Linux/Windows)
+    \item \textbf{Security Analysis:} Interpretation of alerts and correlation of security events
+    \item \textbf{Threat Hunting:} Creation of proactive search queries for anomaly detection
+    \item \textbf{EDR with Sysmon:} Configuration of advanced telemetry for Windows process monitoring
 \end{itemize}
 
-\subsection{Security Concepts Validated}
+\subsection{Importance of SIEM/EDR in a Modern SOC}
+
+In the current cyber threat landscape, SIEM and EDR solutions constitute the fundamental pillars of an effective Security Operations Center (SOC):
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\textbf{Function} & \textbf{Value for SOC} \\
+\hline
+Centralized Visibility & Aggregation of all security events in a single point \\
+\hline
+Real-Time Detection & Automatic alerts on suspicious behaviors \\
+\hline
+Incident Response & Rapid investigation and remediation capability \\
+\hline
+Compliance & Report generation for audits and regulations \\
+\hline
+Threat Intelligence & Alert enrichment with threat data \\
+\hline
+\end{tabularx}
+\caption{SIEM/EDR Value for SOC}
+\end{table}
+
+\subsection{Future Improvements}
+
+Several improvement areas can be considered to enhance this laboratory:
+
+\begin{enumerate}
+    \item \textbf{SOAR Integration:} Incident response automation with playbooks
+    \item \textbf{Threat Intelligence Feeds:} Connection to external sources (MISP, VirusTotal)
+    \item \textbf{Machine Learning:} Anomaly detection based on machine learning
+    \item \textbf{Red Team Exercises:} Simulation of advanced attacks (APT, ransomware)
+    \item \textbf{Cloud SIEM:} Extension to other cloud providers (Azure, GCP)
+    \item \textbf{Kubernetes Monitoring:} Containerized environment surveillance
+\end{enumerate}
+
+\subsection{Acknowledgments}
+
+I would like to express my gratitude to:
 
 \begin{itemize}
-    \item \textbf{SIEM Capabilities:} Centralized log aggregation, correlation, and alerting
-    \item \textbf{EDR Capabilities:} Deep endpoint visibility with process and file monitoring
-    \item \textbf{IAM/PAM:} Identity and privilege monitoring for compliance and security
-    \item \textbf{Threat Hunting:} Practical queries for proactive threat detection
-\end{itemize}
-
-\subsection{Operational Value}
-
-Wazuh provides a cost-effective, open-source solution that combines SIEM and EDR capabilities in a unified platform. This lab demonstrates its applicability for:
-
-\begin{itemize}
-    \item Small to medium enterprise security monitoring
-    \item Cloud-native security operations
-    \item Compliance and audit requirements
-    \item Security Operations Center (SOC) implementations
+    \item \textbf{Prof. Azeddine KHIAT} for his guidance and valuable advice throughout this Cloud Computing module
+    \item \textbf{The Wazuh Team} for providing a professional-grade open-source solution
+    \item \textbf{The Cybersecurity Community} for shared resources and documentation
 \end{itemize}
 
 \begin{infobox}[Key Takeaway]
-The integration of SIEM and EDR capabilities in a single platform like Wazuh provides comprehensive security visibility while reducing operational complexity and cost—essential for modern security operations in cloud environments.
+This laboratory demonstrates that an open-source SIEM/EDR solution like Wazuh can provide enterprise-level protection while remaining accessible. The integration of SIEM and EDR capabilities in a unified platform reduces operational complexity and costs while providing comprehensive security visibility—an essential asset for modern security operations in cloud environments.
 \end{infobox}
+
+\vspace{1cm}
+
+\begin{center}
+\textbf{\large Project Source Code}
+
+\href{https://github.com/yassernamez03/wazuh-siem-edr-cloud-lab}{\textcolor{wazuhblue}{\texttt{https://github.com/yassernamez03/wazuh-siem-edr-cloud-lab}}}
+\end{center}
+
+\newpage
+
+% ============================================================
+% RÉFÉRENCES
+% ============================================================
+
+\section{References}
+
+\begin{enumerate}[label={[\arabic*]}]
+    \item \textbf{Wazuh Documentation} - Official Wazuh Platform Documentation\\
+    \url{https://documentation.wazuh.com}
+    
+    \item \textbf{AWS EC2 Documentation} - Complete Guide to Amazon EC2 Services\\
+    \url{https://docs.aws.amazon.com/ec2}
+    
+    \item \textbf{Sysmon Documentation} - Microsoft Sysinternals System Monitor\\
+    \url{https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon}
+    
+    \item \textbf{MITRE ATT\&CK Framework} - Knowledge Base of Adversary Tactics and Techniques\\
+    \url{https://attack.mitre.org}
+    
+    \item \textbf{AWS VPC Documentation} - Virtual Private Cloud Configuration\\
+    \url{https://docs.aws.amazon.com/vpc}
+    
+    \item \textbf{NIST Cybersecurity Framework} - Cybersecurity Reference Framework\\
+    \url{https://www.nist.gov/cyberframework}
+    
+    \item \textbf{CIS Benchmarks} - System Hardening Guidelines\\
+    \url{https://www.cisecurity.org/cis-benchmarks}
+\end{enumerate}
 
 \end{document}
